@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 16 李佳玲 1123522</title>
+    <style>
+      /* Top Section */
+      .grid-top {
+        display: grid;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      .top {
+        background-color: #b0d748;
+        padding: 70px;
+        text-align: center;
+      }
+
+      /* Middle Section */
+      .grid-middle {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 10px;
+      }
+
+      .middle {
+        background-color: #00c1d2;
+        padding: 70px;
+        text-align: center;
+        flex: 1;
+        max-width: 100%;
+      }
+
+      /* Bottom Section */
+      .grid-bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin-bottom: 10px;
+      }
+
+      .bottom {
+        background-color: #e7eef0;
+        padding: 50px;
+      }
+
+      @media (max-width: 480px) {
+        .top {
+          background-color: #b0d748;
+          padding: 70px;
+        }
+
+        .grid-middle {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .middle {
+          background-color: #00c1d2;
+          padding: 35px;
+          flex: 1;
+          max-width: 100%;
+        }
+        .grid-bottom {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+        }
+
+        .bottom {
+          background-color: #e7eef0;
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Section -->
+    <div class="grid-top">
+      <div class="top"></div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="grid-middle">
+      <div class="middle"></div>
+      <div class="middle"></div>
+      <div class="middle"></div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="grid-bottom">
+      <div class="bottom"></div>
+      <div class="bottom"></div>
+      <div class="bottom"></div>
+      <div class="bottom"></div>
+    </div>
+  </body>
+</html>
