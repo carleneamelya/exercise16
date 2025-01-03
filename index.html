@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 16 李佳玲 1123522</title>
     <style>
-      /* Top Section */
+      body {
+        background-color: #52b6fc;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+        width: 100%;
+      }
+
       .grid-top {
         display: grid;
         margin-bottom: 10px;
@@ -18,11 +35,10 @@
         text-align: center;
       }
 
-      /* Middle Section */
       .grid-middle {
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 10px;
         margin-bottom: 10px;
       }
 
@@ -34,11 +50,10 @@
         max-width: 100%;
       }
 
-      /* Bottom Section */
       .grid-bottom {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 5px;
+        gap: 10px;
         margin-bottom: 10px;
       }
 
@@ -48,9 +63,8 @@
       }
 
       @media (max-width: 480px) {
-        .top {
-          background-color: #b0d748;
-          padding: 70px;
+        .wrapper {
+          width: 100%;
         }
 
         .grid-middle {
@@ -58,42 +72,41 @@
           align-items: stretch;
         }
         .middle {
-          background-color: #00c1d2;
           padding: 35px;
-          flex: 1;
-          max-width: 100%;
         }
         .grid-bottom {
           grid-template-columns: repeat(2, 1fr);
           gap: 15px;
         }
-
         .bottom {
-          background-color: #e7eef0;
           padding: 25px;
         }
       }
     </style>
   </head>
   <body>
-    <!-- Top Section -->
-    <div class="grid-top">
-      <div class="top"></div>
-    </div>
+    <div class="wrapper">
+      <!-- Top Section -->
+      <div class="grid-top">
+        <div class="top"></div>
+      </div>
 
-    <!-- Middle Section -->
-    <div class="grid-middle">
-      <div class="middle"></div>
-      <div class="middle"></div>
-      <div class="middle"></div>
-    </div>
+      <!-- Middle Section -->
+      <div class="grid-middle">
+        <div class="middle"></div>
+        <div class="middle"></div>
+        <div class="middle"></div>
+      </div>
 
-    <!-- Bottom Section -->
-    <div class="grid-bottom">
-      <div class="bottom"></div>
-      <div class="bottom"></div>
-      <div class="bottom"></div>
-      <div class="bottom"></div>
+      <!-- Bottom Section -->
+      <div class="grid-bottom">
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+        <div class="bottom"></div>
+      </div>
     </div>
   </body>
 </html>
+
+
